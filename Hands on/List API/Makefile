@@ -1,5 +1,5 @@
 obj-m += list.o
-KSRC = /home/user/workspace/packages/linux-4.14.228
+KSRC = /home/user/eworkspace/packages/linux-4.14.228
 
 all:
 	make -C ${KSRC}  M=${PWD}  modules ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- 
