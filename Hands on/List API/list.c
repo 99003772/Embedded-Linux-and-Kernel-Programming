@@ -3,17 +3,13 @@
 #include <linux/kernel.h>
 #include <linux/list.h>
 #include <linux/slab.h>
-
-
 struct sample {
   int x;
   int y;
   int z;
   struct list_head entry;
 };
-
 LIST_HEAD(mylist);
-
 void printdata(void) {
   struct list_head* pcur;
   struct sample *ps;
@@ -35,9 +31,6 @@ int __init listdemo_init(void) {        //init_module
   printk("Hello World..welcome\n");
   return 0;
 }
-
-
-
 void __exit listdemo_exit(void) {       //cleanup_module
   struct list_head *pcur,*pbak;
   struct sample *ps;
@@ -47,7 +40,6 @@ void __exit listdemo_exit(void) {       //cleanup_module
   }
   printk("Bye,Leaving the world\n");
 }
-
 module_init(listdemo_init);
 module_exit(listdemo_exit);
 MODULE_LICENSE("GPL");
