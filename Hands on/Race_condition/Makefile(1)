@@ -1,6 +1,6 @@
 obj-m += race1.o
 
-KSRC=/home/user/workspace/packages/linux-4.14.227
+KSRC=/home/user/workspace/packages/linux-4.14.228
 ARCH=arm
 CROSS_COMPILE_PREFIX=arm-linux-gnueabi-
 
