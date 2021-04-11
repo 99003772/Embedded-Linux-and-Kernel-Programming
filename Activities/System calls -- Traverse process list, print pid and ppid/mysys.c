@@ -12,7 +12,8 @@ SYSCALL_DEFINE0(mytestfour)
     {
     task = task->parent;
     printk(KERN_NOTICE "assignment: parent process: %s, PID: %d", task->comm, task->pid);
-    }while(task->pid!=0);
+    }
+	while(task->pid!=0);
     struct task_struct *task1,*taskp;
     for_each_process(task1) {/* this pointlessly prints the name and PID of each task */
     taskp=task1->parent;
