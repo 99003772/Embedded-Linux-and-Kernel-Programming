@@ -7,7 +7,6 @@
 #define MY_IOCTL_AVAIL  _IO(IOC_MAGIC, 2)
 #define MY_IOCTL_LEN	_IO(IOC_MAGIC, 1)
 
-
 int main()
 {
 int nbytes,ret;
