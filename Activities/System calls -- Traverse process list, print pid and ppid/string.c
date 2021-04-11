@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #define __NR_testcall 402
 int main() {
-printf("hi i am souvik");
+printf("hi i am sayani");
 int ret;
 ret=syscall(__NR_testcall);
 printf("\nreversed string is %d\n", ret);
