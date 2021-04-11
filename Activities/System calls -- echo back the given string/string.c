@@ -6,7 +6,7 @@ int main() {
 printf("hello world");
 int ret;
 char abc[100];
-ret=syscall(__NR_testcall,"souvikjana",abc);
+ret=syscall(__NR_testcall,"sayanibasak",abc);
 printf("\nreversed string is %s\n", abc);
 if(ret<0)
 perror("testcall");
