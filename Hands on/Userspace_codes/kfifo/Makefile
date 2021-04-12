@@ -1,5 +1,5 @@
 obj-m += kfifodriver.o
-KSRC = /home/user/Workspace/package/linux-4.14.202
+KSRC = /home/user/eworkspace/packages/linux-4.14.228
 
 all:
 	make -C ${KSRC} M=${PWD} ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
