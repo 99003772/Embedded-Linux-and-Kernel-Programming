@@ -7,4 +7,4 @@ clean:
 	make -C /home/user/workspace/kernel_ws/linux-4.14.227 M=$(PWD) clean ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
 
 build:
-	arm-linux-gnueabi-gcc test.c -o lio
+	arm-linux-gnueabi-gcc mysys.c -o lio
